@@ -1,0 +1,4 @@
+venv/
+logs/
+.env
+LLMOPS_4.egg-info/
