@@ -30,11 +30,10 @@ kind: Service
 metadata:
   name: llmops-service
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: llmops
   ports:
     - protocol: TCP
       port: 80
       targetPort: 8501
-      nodePort: 30080
